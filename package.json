@@ -1,10 +1,11 @@
 {
   "name": "affiliatesites",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "npm run clean && npm run site",
+    "less": "lessc src/less/index.less > docs/index.css",
+    "build": "npm run clean && npm run site && npm run less",
     "site": "cp src/html/* docs",
     "clean": "rimraf -f docs && mkdir docs",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -21,5 +22,8 @@
   "homepage": "https://github.com/moonbookbrandon/AffiliateSites#readme",
   "dependencies": {
     "rimraf": "^3.0.2"
+  },
+  "devDependencies": {
+    "less": "^3.12.2"
   }
 }
