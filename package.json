@@ -1,9 +1,10 @@
 {
   "name": "affiliatesites",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "",
   "main": "index.js",
   "scripts": {
+    "clean": "rimraf -f docs && mkdir docs",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/moonbookbrandon/AffiliateSites/issues"
   },
-  "homepage": "https://github.com/moonbookbrandon/AffiliateSites#readme"
+  "homepage": "https://github.com/moonbookbrandon/AffiliateSites#readme",
+  "dependencies": {
+    "rimraf": "^3.0.2"
+  }
 }
